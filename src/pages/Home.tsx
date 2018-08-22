@@ -15,8 +15,9 @@ export class HomeScreen extends React.Component<Props, {}> {
   
     joinRoom = () => {
       const { navigate } = this.props.navigation;
-  
-      navigate('Join')
+      const roomCode = 'ABC123';  
+      
+      navigate('Join', { roomCode })
     }
   
     render() {
