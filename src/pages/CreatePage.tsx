@@ -1,15 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
-import { List, ListItem, Button } from 'react-native-elements'
+import { Button } from 'react-native-elements'
+import { NavigationScreenProp } from "react-navigation";
 
 type Props = {
-    navigation: any
-}
+    navigation: NavigationScreenProp<any>}
 
-export class CreateRoom extends React.Component<Props, {}> {
+export class CreatePage extends React.Component<Props, {}> {
     ready = () => {
         alert('Jestem gotowy!');
-    }
+    };
 
     render() {
         const { navigation } = this.props;

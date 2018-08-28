@@ -1,5 +1,6 @@
 export enum PAGES {
-    HOME = 'Home',
-    CREATE_ROOM = 'CreateRoom',
-    JOIN_ROOM = 'JoinRoom'
+    HOME_PAGE = 'HomePage',
+    CREATE_PAGE = 'CreatePage',
+    JOIN_PAGE = 'JoinPage',
+    PLAYER_PAGE = 'PlayerPage'
 };

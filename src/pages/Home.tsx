@@ -1,27 +1,25 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import {
-  createStackNavigator,
-} from 'react-navigation';
 import { PAGES } from '../enums/pages';
+import { NavigationScreenProp } from "react-navigation";
 
 type Props = {
-    navigation: any
+    navigation: NavigationScreenProp<any>
 }
   
 export class HomeScreen extends React.Component<Props, {}> {  
     joinRoom = () => {
       const { navigate } = this.props.navigation;
 
-      navigate(PAGES.JOIN_ROOM);
-    }
+      navigate(PAGES.JOIN_PAGE);
+    };
   
     createRoom = () => {
       const { navigate } = this.props.navigation;
       const roomCode = 'ABC123';  
       
-      navigate(PAGES.CREATE_ROOM, { roomCode })
-    }
+      navigate(PAGES.CREATE_PAGE, { roomCode })
+    };
   
     render() {
       return (
