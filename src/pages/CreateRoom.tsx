@@ -6,7 +6,7 @@ type Props = {
     navigation: any
 }
 
-export class JoinScreen extends React.Component<Props, {}> {
+export class CreateRoom extends React.Component<Props, {}> {
     ready = () => {
         alert('Jestem gotowy!');
     }
