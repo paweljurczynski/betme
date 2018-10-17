@@ -20,7 +20,7 @@ export class JoinPage extends React.Component<Props, State> {
     ready = () => {
         const question = 'Wymień 5 stolic zaczynających się na literę A';
 
-        this.props.navigation.navigate(PAGES.PLAYER_PAGE, { question })
+        this.props.navigation.navigate(PAGES.WAITING_PAGE, { question })
     };
 
     onChangeText = (text: string) => {
@@ -35,7 +35,12 @@ export class JoinPage extends React.Component<Props, State> {
                     style={styles.textInput}
                     onChangeText={this.onChangeText}
                 />
-                <Button title="Dołącz" onPress={this.ready} />
+                <Button title="Dołącz"
+                        large
+                        raised
+                        onPress={this.ready}
+                        disabled={!this.state.roomCode.length}
+                />
             </KeyboardAvoidingView>
         );
     }

@@ -6,8 +6,7 @@ type Props = {
     navigation: NavigationScreenProp<any>
 }
 
-export class JoinRoom extends React.Component<Props> {
-
+export class WaitingPage extends React.Component<Props> {
     render() {
         return (
             <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
